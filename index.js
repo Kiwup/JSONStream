@@ -42,7 +42,7 @@ exports.parse = function (path, map) {
         return {recurse: true}
       else
         return e
-    })
+    }).filter((e) => e !== '#')
 
 
   var count = 0, _key
